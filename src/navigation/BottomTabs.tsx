@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   label: {
+    textAlign: "center",
     fontSize: 12,
     marginTop: 2,
   },
