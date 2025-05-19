@@ -120,7 +120,7 @@ const CustomBottomTab = ({
                   { color: isFocused ? COLORS.blue : "white" },
                 ]}
               >
-                {label()}.
+                {label()}
               </Text>
             )}
           </TouchableOpacity>

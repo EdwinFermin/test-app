@@ -5,7 +5,7 @@ export default function UnderConstructionScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.emoji}>🚧</Text>
-      <Text style={styles.text}>This screen is under construction.</Text>
+      <Text style={styles.text}>Esta pantalla esta bajo construcción.</Text>
     </View>
   );
 }
