@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
 import SwitchSelector from "react-native-switch-selector";
+import { StatusBar } from "expo-status-bar";
 //
 import { RootState } from "@redux/store";
 import PlayerCard from "@components/PlayerCard";
@@ -56,6 +57,7 @@ export default function PlayersScreen() {
 
   return (
     <View style={styles.root}>
+      <StatusBar style="light" />
       <BackgroundSvg
         style={StyleSheet.absoluteFillObject}
         preserveAspectRatio="xMidYMid slice"

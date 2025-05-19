@@ -3,15 +3,16 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 import { Image } from "expo-image";
 import { RouteProp, useRoute } from "@react-navigation/native";
-import { RootStackParamList } from "@navigation/AppNavigator";
+import { StatusBar } from "expo-status-bar";
 //
 import { toggleFavorite } from "@redux/player/actions";
 import { RootState } from "@redux/store";
 import TopBar from "@components/TopBar";
 import BackgroundSvg from "@assets/svgs/top_shape.svg";
 import { AVATAR_PLACEHOLDER } from "@utils/Constants";
+import { StackParamList } from "@navigation/PlayerStack";
 
-type RouteProps = RouteProp<RootStackParamList, "Detail">;
+type RouteProps = RouteProp<StackParamList, "Detail">;
 
 export default function PlayerDetailScreen() {
   const route = useRoute<RouteProps>();
@@ -26,6 +27,7 @@ export default function PlayerDetailScreen() {
 
   return (
     <View style={styles.root}>
+      <StatusBar style="light" />
       <BackgroundSvg
         style={StyleSheet.absoluteFillObject}
         preserveAspectRatio="xMidYMid slice"
